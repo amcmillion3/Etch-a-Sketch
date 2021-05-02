@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+body {
+    text-align: center;
+}
+
+header {
+    font-family: 'Germania One', cursive;
+    font-size: 30px;
+    color: #f9a602;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #f9a602;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffd300;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    border: 1px solid black;
+    width: 600px;
+    margin: 20px auto;
+    height: 600px;
+}
+
+#grid-container > * {
+    border: 1px thin black;
+}
