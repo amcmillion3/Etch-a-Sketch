@@ -35,6 +35,7 @@ colorBtn.addEventListener("click", () => {
     for( let i = 0; i < gridDiv.length; i++) {
         gridDiv[i].onmouseover = (e) => {
             e.target.style.background = `${randomColor()}`;
+            e.target.style.opacity = `1`;
         };
     };
 });
