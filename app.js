@@ -39,6 +39,16 @@ colorBtn.addEventListener("click", () => {
     };
 });
 
+grayBtn.addEventListener("click", () => {
+    let gridDiv = document.querySelectorAll(".grid-container > div");
+    for( let i = 0; i < gridDiv.length; i++) {
+        gridDiv[i].onmouseover = (e) => {
+            e.target.style.background = `black`;
+            e.target.style.opacity -= `-0.1`;
+        };
+    };
+});
+
 const randomColor = function() {
     let number = function() {
         let randomNumber = Math.floor(Math.random() * 256);
