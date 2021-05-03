@@ -27,7 +27,7 @@ header {
     background-color: #ffd300;
 }
 
-#grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
@@ -37,6 +37,6 @@ header {
     height: 600px;
 }
 
-#grid-container > * {
-    border: 1px thin black;
+.grid-div {
+    border: 1px solid black;
 }
